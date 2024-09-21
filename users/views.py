@@ -35,3 +35,4 @@ def change_username(user_id: int, new_name: str):
     current_user = list(filter(lambda user: user.get("id") == user_id, FAKE_USERS))[0]
     current_user["name"] = new_name
     return {"status": 200, "data": current_user}
+
